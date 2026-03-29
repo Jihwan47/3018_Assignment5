@@ -144,7 +144,7 @@ router.get("/events/:id", validateRequest(postSchemas.getById), eventController.
  *         schema:
  *           type: string
  *         description: The id of the event to update
- *       example: 64b8f0c2e1d2c3a4b5c6d7e8
+ *         example: 64b8f0c2e1d2c3a4b5c6d7e8
  *     requestBody:
  *       required: true
  *       content:
