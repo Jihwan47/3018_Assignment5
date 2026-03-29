@@ -10,11 +10,6 @@ import eventRoutes from "./api/v1/routes/eventRoutes"
 import getCorsOptions from "./api/v1/middleware/cors";
 import setupSwagger from "../config/swagger";
 
-// import setupSwagger from "../config/swagger";
-// import itemRoutes from "./api/v1/routes/itemRoutes";
-// import userRoutes from "./api/v1/routes/userRoutes";
-// import adminRoutes from "./api/v1/routes/adminRoutes";
-// import errorHandler from "./api/v1/middleware/errorHandler";
 
 
 // Initialize Express application
