@@ -86,7 +86,7 @@ router.post("/events", validateRequest(postSchemas.create), eventController.crea
  *                   type: array
  *                   items:
  *                     $ref: '#/components/schemas/events'
- *      '500':
+ *       '500':
  *         description: Internal server error
  *         content:
  *           application/json:
@@ -120,7 +120,7 @@ router.get("/events", validateRequest(postSchemas.getById), eventController.getA
  *                   type: array
  *                   items:
  *                     $ref: '#/components/schemas/events'
- *      '404':
+ *       '404':
  *         description: Event not found
  *         content:
  *           application/json:
@@ -129,7 +129,7 @@ router.get("/events", validateRequest(postSchemas.getById), eventController.getA
  */
 router.get("/events/:id", validateRequest(postSchemas.getById), eventController.getEventById);
 
-// Update post - validates both params and body
+// Update Put - validates both params and body
 /**
  * @openapi
  * /events/{id}:
@@ -139,12 +139,12 @@ router.get("/events/:id", validateRequest(postSchemas.getById), eventController.
  *     security:
  *       - bearerAuth: []
  *     parameters:
- *      - name: id
- *       in: path
- *       required: true
- *       schema:
- *         type: string
- *       description: The id of the event to update
+ *       - name: id
+ *         in: path
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: The id of the event to update
  *       example: 64b8f0c2e1d2c3a4b5c6d7e8
  *     requestBody:
  *       required: true
@@ -233,7 +233,7 @@ router.put("/events/:id", validateRequest(postSchemas.update), eventController.u
  *                   type: array
  *                   items:
  *                     $ref: '#/components/schemas/events'
- *      '404':
+ *       '404':
  *         description: Event not found
  *         content:
  *           application/json:
