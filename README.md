@@ -143,3 +143,13 @@ curl --location --request DELETE 'http://localhost:3000/api/v1/events/0ckUzmBF2s
 
 4. Link to Public Documentation
 =================
+https://jihwan47.github.io/3018_Assignment5/
+This is the link to the public documentation for the events API.
+This URL provides access to the API documentation, including endpoint descriptions, request and response examples in general.
+=================
+
+5. Local Documentation Access
+=================
+http://localhost:3000/api-docs/
+This is the URL to access the Local Documentation for the events API when running the server locally.
+This URL provides access to the API documentation, including endpoint descriptions, request and response examples for developers working with the API in a local development environment.
