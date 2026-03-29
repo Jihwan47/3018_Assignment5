@@ -5,7 +5,6 @@ import { postSchemas } from "../validation/eventValidation";
 
 const router = express.Router();
 
-
 // Create post(POST) - validates body only
 /**
  * @openapi
