@@ -30,18 +30,18 @@ app.use(express.json());
 
 // Use Morgan for HTTP request logging
 app.use(morgan("combined"));
+// Initialize Swagger
+setupSwagger(app);
 
 // Define a route
 app.get("/", (req, res) => {
     res.send("Hello, World!");
 });
 
-
 // router handler
 // router defined in health routes, prefixed with /api/v1
 app.use("/api/v1", healthRoutes);
 app.use("/api/v1", eventRoutes);
-// Initialize Swagger
-setupSwagger(app);
+
 
 export default app;
