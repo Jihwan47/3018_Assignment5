@@ -1,7 +1,5 @@
 import Joi from "joi";
 
-// Post operation schemas organized by request part
-export const postSchemas = {
 // POST /posts - Create new post
 // validate all the require fields when creating
 /**
@@ -43,6 +41,8 @@ export const postSchemas = {
  *           enum: [conference, workshop, meetup, seminar, general]
  *           default: general
  */
+// Post operation schemas organized by request part
+export const postSchemas = {    
     create: {
         body: Joi.object({
             name: Joi.string().min(3).required().messages({
