@@ -1,5 +1,5 @@
 import fs from "fs";
-import { generateSwaggerSpec } from "../src/api/v1/middleware/swaggerOptions";
+import { generateSwaggerSpec } from "../config/swaggerOptions";
 
 // Get the specs using our shared configuration
 const specs = generateSwaggerSpec();
